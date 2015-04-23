@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>GitHub API</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+ </head>
+ <body>
+	<div id="token">
+		<input type="text" value="" id="token_input" placeholder="Token" size="30" />
+    </div>
+    <div id="repoData">
+        <input type="text" value="" id="repoUser" placeholder="Nombre del usuario" size="30" />
+        <input type="text" value="" id="repoName" placeholder="Nombre del repositorio" size="30" />
+    </div>
+    <button type="button" id="search_button" >Search</button>
+    <div id="key">
+        <input type="text" value="" id="fileName" placeholder="Nombre del fichero" size="30" />
+    </div>
+    <div id="value">
+        <textarea id="content" placeholder="Contenido del fichero"></textarea>
+    </div>
+     <button type="button" id="commit_button" >Upload file</button>
+    <div id="repo_data"></div>
+    <div id="result"></div>
+    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="github.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+ </body>
+</html>
