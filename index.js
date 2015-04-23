@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
 	});
 	$('#commit_button').click(function(){
 		var result = document.createElement('h');
-		repo.write('master', 'datafile', $('#content').val(), 'Upload text', function(err) {
+		repo.write('master', $('fileName').val(), $('#content').val(), 'Upload text', function(err) {
 		 	if(err){
 		 		result.innerHTML = "Error:" + err.Error;
 		 	}else{
